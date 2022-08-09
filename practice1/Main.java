@@ -4,12 +4,17 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in); 
-    int A = sc.nextInt();
-    int B = sc.nextInt();
+    int a = sc.nextInt();
+    int b = sc.nextInt();
     
-    System.out.println(A*(B%10));
-    System.out.println(A*((B%100)/10));
-    System.out.println(A*(B/100));
-    System.out.println(A*B);
+    if(b>=45) {
+      System.out.println(a+" "+(b-45));
+    } else{
+    if(a==0) {
+      System.out.println("23 "+(b+15));
+    } 
+    else 
+      System.out.println((a-1)+" "+(b+15));
+    }
   }
 }
