@@ -80,15 +80,27 @@
 #     print(a-1,b+15)
 
 # 2525번
-H,M = map(int,input().split())
-T = int(input())
+# H,M = map(int,input().split())
+# T = int(input())
 
-H += T//60
-M += T%60
+# H += T//60
+# M += T%60
 
-if(M>=60):
-  H = H+1
-  M = M-60
-elif(H>=24):
-  H= H-24
-print(H,M)
+# if(M>=60):
+#   H = H+1
+#   M = M-60
+# elif(H>=24):
+#   H= H-24
+# print(H,M)
+
+# 2480번
+a,b,c = map(int, input().split())
+
+if(a==b==c):
+  print(10000+(a*1000))
+elif(a==b or a ==c):
+  print(1000+(a*100))
+elif(b==c):
+  print(1000+(b*100))
+else:
+  print(max(a,b,c)*100)
