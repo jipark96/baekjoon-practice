@@ -118,3 +118,21 @@
 #   b,c=map(int,input().split())
 #   print(b+c)
 
+# 8393번
+# a=int(input())
+# sum=0
+# for i in range(a+1):
+#   sum = sum+i
+# print(sum)
+
+#25304번 영수증문제(반복문)
+total=int(input())
+b=int(input())
+sum=0
+for i in range(b):
+  money,num= map(int, input().split())
+  sum += money*num
+if(total==sum):
+  print("Yes")
+else:
+  print("No")
