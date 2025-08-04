@@ -1,26 +1,27 @@
-package practice1.Level1;
+package practice1.OxOO;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class No2751 {
+public class No3 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int num1 = Integer.parseInt(br.readLine());
 
-        int[] arr = new int[num1];
+        int result = func(num1);
 
-        for (int i = 0; i < num1; i++) {
-            arr[i] = Integer.parseInt(br.readLine());
-        }
-
-        Arrays.sort(arr);
-
-        for (int i = 0; i< num1; i++) {
-            System.out.println(arr[i]);
-        }
+        System.out.println(result);
     }
+
+        // 함수
+        public static int func(int N) {
+            for (int i = 1; i * i <= N; i++) {
+                if (i*i == N) return 1;
+            }
+            return 0;
+        }
+
 }
