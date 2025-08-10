@@ -1,9 +1,8 @@
-package practice1.OxOO;
+package practice1.lev002;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class No3 {
     public static void main(String[] args) throws IOException {

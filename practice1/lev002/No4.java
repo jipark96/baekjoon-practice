@@ -1,4 +1,4 @@
-package practice1.OxOO;
+package practice1.lev002;
 
 import java.io.BufferedReader;
 import java.io.IOException;
